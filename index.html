@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindCare - Mental Health Rehab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradient 10s ease infinite;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500">
+
+  <!-- Header -->
+  <header class="fixed w-full bg-gradient-to-r from-purple-600 via-cyan-500 to-purple-600 animate-gradient shadow z-50 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center space-x-2">
+        <img src="https://i.ibb.co.com/MDwyf0h4/logo.jpg" alt="Logo" class="w-10 h-10 rounded">
+        <span class="text-xl font-bold">MindCare</span>
+      </div>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right -->
+      <div class="flex items-center space-x-3">
+        <button id="darkToggle" class="p-2 rounded-full bg-white/20">
+          🌙
+        </button>
+        <a href="#contact" class="hidden md:inline-block bg-white text-purple-700 font-semibold px-4 py-2 rounded-lg hover:bg-gray-100">Get Help Today</a>
+        <button id="menuBtn" class="md:hidden p-2">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="pt-28 pb-20 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        Your Journey to <span class="text-cyan-400">Mental Wellness</span> Starts Here
+      </h1>
+      <p class="mt-6 text-lg text-gray-600 dark:text-gray-300">
+        Professional, compassionate mental health rehabilitation services designed to help you heal, grow, and thrive.
+      </p>
+      <div class="mt-6 flex space-x-4">
+        <a href="#contact" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">Start Your Recovery</a>
+        <a href="#about" class="border border-cyan-600 text-cyan-600 px-6 py-3 rounded-lg hover:bg-cyan-50">Learn More</a>
+      </div>
+    </div>
+    <div class="relative">
+      <img src="https://i.ibb.co/b5btndsJ/download-7.jpg" class="rounded-2xl shadow-lg">
+      <div class="absolute bottom-[-20px] left-6 bg-gradient-to-r from-purple-600 to-cyan-500 text-white p-3 rounded-lg shadow animate-gradient">
+        <p class="text-sm font-medium">24/7 Support <br> Always here for you</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-6 bg-gradient-to-r from-purple-600 via-cyan-500 to-purple-600 animate-gradient text-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center">Our Services</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="bg-white/90 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-3 text-purple-600">Individual Therapy</h3>
+          <p class="text-gray-700">One-on-one sessions with licensed therapists tailored to your needs.</p>
+        </div>
+        <div class="bg-white/90 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-3 text-purple-600">Group Therapy</h3>
+          <p class="text-gray-700">Supportive group sessions that foster connection and shared experiences.</p>
+        </div>
+        <div class="bg-white/90 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-3 text-purple-600">Crisis Intervention</h3>
+          <p class="text-gray-700">24/7 emergency support and immediate intervention for acute mental health crises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 px-6 bg-gradient-to-r from-purple-600 via-cyan-500 to-purple-600 animate-gradient text-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center">Success Stories</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="bg-white/20 p-6 rounded-xl shadow">
+          <p>"The compassionate care I received here changed my life. The therapists truly listened and helped me develop coping strategies."</p>
+          <span class="block mt-4 font-semibold">- Sarah M.</span>
+        </div>
+        <div class="bg-white/20 p-6 rounded-xl shadow">
+          <p>"I never thought I'd feel normal again. The program gave me tools to manage my symptoms and reclaim my life."</p>
+          <span class="block mt-4 font-semibold">- Michael R.</span>
+        </div>
+        <div class="bg-white/20 p-6 rounded-xl shadow">
+          <p>"The holistic approach addressed not just my addiction but my underlying mental health. I'm 2 years sober and thriving."</p>
+          <span class="block mt-4 font-semibold">- Emma L.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-20 px-6 bg-gradient-to-r from-purple-600 via-cyan-500 to-purple-600 animate-gradient text-white">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold">Ready to Begin Your Journey?</h2>
+      <p class="mt-4">Take the first step towards mental wellness today. We’re here to support you every step of the way.</p>
+      <div class="mt-10 grid md:grid-cols-2 gap-8 text-left">
+        <form class="bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-200 p-6 rounded-xl shadow space-y-4">
+          <input type="text" placeholder="First Name" class="w-full p-3 border rounded dark:bg-gray-700">
+          <input type="text" placeholder="Last Name" class="w-full p-3 border rounded dark:bg-gray-700">
+          <input type="email" placeholder="Email Address" class="w-full p-3 border rounded dark:bg-gray-700">
+          <input type="text" placeholder="Phone Number" class="w-full p-3 border rounded dark:bg-gray-700">
+          <textarea placeholder="Tell us how we can help..." class="w-full p-3 border rounded dark:bg-gray-700"></textarea>
+          <button class="bg-cyan-600 text-white px-6 py-3 rounded-lg w-full hover:bg-cyan-700">Schedule Consultation</button>
+        </form>
+        <div class="space-y-4">
+          <p><strong>📞 24/7 Crisis Hotline:</strong><br>1-800-MINDCARE</p>
+          <p><strong>📍 Visit Our Center:</strong><br>123 Wellness Avenue<br>Mental Health District<br>City, State</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-purple-600 via-cyan-500 to-purple-600 animate-gradient py-6 text-center text-white">
+    <p>© 2025 MindCare. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Dark Mode Toggle
+    const toggle = document.getElementById("darkToggle");
+    const html = document.documentElement;
+    if(localStorage.getItem("theme") === "dark"){
+      html.classList.add("dark");
+      toggle.textContent = "☀️";
+    }
+    toggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      if(html.classList.contains("dark")){
+        localStorage.setItem("theme","dark");
+        toggle.textContent = "☀️";
+      } else {
+        localStorage.setItem("theme","light");
+        toggle.textContent = "🌙";
+      }
+    });
+
+    // Mobile Menu
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Active Link Highlight
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        if(top >= sec.offsetTop - 100){
+          current = sec.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("font-bold","underline");
+        if(link.getAttribute("href") === "#" + current){
+          link.classList.add("font-bold","underline");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
